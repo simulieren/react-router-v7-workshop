@@ -12,6 +12,10 @@ export default [
 
 		// BIZ Examples
 		route('biz-api-example', "routes/action/biz-api-example.tsx"),
+
+		// View Transitions Examples
+		route('image-gallery', "routes/image-gallery.tsx"),
+		route('image/:id', "routes/image.tsx"),
 	]),
 
 	// User Profile Layout

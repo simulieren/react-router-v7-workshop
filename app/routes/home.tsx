@@ -60,6 +60,14 @@ export default function Home() {
         </li>
       </ul>
 
+      {/* View Transitions Examples */}
+      <h2 className="text-2xl font-bold my-4">View Transitions Examples</h2>
+      <ul className="space-y-2">
+        <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
+          <Link prefetch="intent" to="/image-gallery" viewTransition>/image-gallery (Image Gallery with View Transitions)</Link>
+        </li>
+      </ul>
+
       {/* Language Examples */}
       <h2 className="text-2xl font-bold my-4">Language Examples (Internationalization - i18n)</h2>
       <ul className="space-y-2">
