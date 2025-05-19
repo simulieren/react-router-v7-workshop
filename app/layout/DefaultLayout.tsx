@@ -11,6 +11,7 @@ const Links = [
 
 export default function DefaultLayout() {
 	const {user} = useRootData();
+	console.log("🛑 ~ DefaultLayout ~ user:", user)
 	// NOTE: Client side version with better-auth
 	// const user = authClient?.useSession();
 
