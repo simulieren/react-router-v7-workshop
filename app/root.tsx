@@ -9,6 +9,15 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { auth } from "./.server/auth";
+
+export async function loader({request}: Route.LoaderArgs) {
+  const user = await auth.api.getSession(request);
+
+  return {
+    user: user?.user || null
+  }
+}
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },

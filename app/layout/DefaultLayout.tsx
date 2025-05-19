@@ -1,5 +1,6 @@
 import { NavLink, Outlet, useNavigation } from "react-router";
 import { authClient } from "~/.client/auth-client";
+import { useRootData } from "~/hooks/useRootData";
 
 const Links = [
 	{
@@ -9,10 +10,12 @@ const Links = [
 ];
 
 export default function DefaultLayout() {
+	const {user} = useRootData();
+	// NOTE: Client side version with better-auth
+	// const user = authClient?.useSession();
+
 	const navigation = useNavigation();
 	const isNavigating = Boolean(navigation.location);
-
-	const user = authClient?.useSession();
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
@@ -34,9 +37,9 @@ export default function DefaultLayout() {
 				</ul>
 
 				{/* User Info */}
-				{user?.data?.user && (
+				{user && (
 					<div className="flex items-center gap-2 p-4">
-						<span className="text-sm capitalize">{user.data?.user.name}</span>
+						<span className="text-sm capitalize">{user.name}</span>
 						<button className="text-sm text-blue-500 hover:text-blue-600" onClick={() => authClient.signOut()}>Sign Out</button>
 					</div>
 				)}
