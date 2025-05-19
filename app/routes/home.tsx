@@ -18,7 +18,7 @@ export function meta({ data }: Route.MetaArgs) {
 export default function Home() {
   return (
     <div className="p-8">
-      <h2 className="text-2xl font-bold my-4">Available Routes:</h2>
+      <h2 className="text-2xl font-bold my-4">Loader Examples:</h2>
       <ul className="space-y-2">
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/loader-example">/loader-example (Pokemon List)</Link>
@@ -40,7 +40,7 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2 className="text-2xl font-bold my-4">User Profile</h2>
+      <h2 className="text-2xl font-bold my-4">Layouts: User Profile</h2>
       <ul className="space-y-2">
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/user-profile">/user-profile (User Profile)</Link>
@@ -53,7 +53,7 @@ export default function Home() {
         </li>
       </ul>
 
-      <h2 className="text-2xl font-bold my-4">Prerendered Route Examples</h2>
+      <h2 className="text-2xl font-bold my-4">Prerendered Route Examples (Static Site Generation - SSG)</h2>
       <ul className="space-y-2">
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/prerendered/static-loader-example">/prerendered/static-loader-example (Static Loader Example)</Link>
@@ -61,7 +61,7 @@ export default function Home() {
       </ul>
 
       {/* Language Examples */}
-      <h2 className="text-2xl font-bold my-4">Language Examples</h2>
+      <h2 className="text-2xl font-bold my-4">Language Examples (Internationalization - i18n)</h2>
       <ul className="space-y-2">
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/categories">/categories (Default English Categories)</Link>
@@ -77,8 +77,8 @@ export default function Home() {
         </li>
       </ul>
 
-      {/* BIZ Examples */}
-      <h2 className="text-2xl font-bold my-4">BIZ Examples</h2>
+      {/* BIZ API Examples */}
+      <h2 className="text-2xl font-bold my-4">BIZ API Examples</h2>
       <ul className="space-y-2">
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/biz-api-example">/biz-api-example (Biz API Example)</Link>
