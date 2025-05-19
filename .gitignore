@@ -4,3 +4,9 @@
 # React Router
 /.react-router/
 /build/
+
+# ENV
+.env
+
+# Local DB
+local.db
