@@ -5,6 +5,7 @@ export default [
 		index("routes/home.tsx"),
 		route('loader-example', "routes/loader-example.tsx"),
 		route('loader-example-pagination', "routes/loader-example-pagination.tsx"),
+		route('loader-example-infinite-scroll', "routes/loader-example-infinite-scroll.tsx"),
 		route('loader-example/:id', "routes/loader-example-with-param.tsx"),
 		route('client-loader-example', "routes/client-loader-example.tsx"),
 		route('action-example', "routes/action/action-example.tsx"),

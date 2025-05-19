@@ -59,6 +59,11 @@ export default function Home() {
 						/loader-example-pagination (Loader Example Pagination)
 					</Link>
 				</li>
+				<li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
+					<Link prefetch='intent' to='/loader-example-infinite-scroll'>
+						/loader-example-infinite-scroll (Loader Example Infinite Scroll)
+					</Link>
+				</li>
 			</ul>
 
 			<h2 className='text-2xl font-bold my-4'>Layouts: User Profile</h2>
