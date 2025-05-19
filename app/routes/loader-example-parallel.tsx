@@ -1,6 +1,5 @@
-import { Suspense } from "react";
 import type { Route } from "./+types/loader-example-parallel";
-import { Await, Link, useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 
 export async function loader({ request }: Route.LoaderArgs) {
 	// Get initial pokemon list and items in parallel
