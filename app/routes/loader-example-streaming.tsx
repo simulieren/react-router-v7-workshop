@@ -40,7 +40,7 @@ export function meta({ data }: Route.MetaArgs) {
   ];
 }
 
-export default function LoaderExample() {
+export default function LoaderExampleStreaming() {
   const { pokemon, pokemonItems } = useLoaderData<typeof loader>();
 
   return (

@@ -38,6 +38,9 @@ export default function Home() {
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/loader-example-streaming">/loader-example-streaming (Loader Example Streaming)</Link>
         </li>
+        <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
+          <Link prefetch="intent" to="/loader-example-parallel">/loader-example-parallel (Loader Example Parallel)</Link>
+        </li>
       </ul>
 
       <h2 className="text-2xl font-bold my-4">User Profile</h2>

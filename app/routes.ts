@@ -8,6 +8,7 @@ export default [
 		route('client-loader-example', "routes/client-loader-example.tsx"),
 		route('action-example', "routes/action/action-example.tsx"),
 		route('loader-example-streaming', "routes/loader-example-streaming.tsx"),
+		route('loader-example-parallel', "routes/loader-example-parallel.tsx"),
 
 		// BIZ Examples
 		route('biz-api-example', "routes/action/biz-api-example.tsx"),
