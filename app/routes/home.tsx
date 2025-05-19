@@ -1,7 +1,7 @@
 import type { Route } from "./+types/home";
-import { Link, useLoaderData } from "react-router";
+import { Link } from "react-router";
 
-export function loader({ request }: Route.LoaderArgs) {
+export function loader({}: Route.LoaderArgs) {
 	return {
 		message: "Hello, world!",
 	};
@@ -35,16 +35,6 @@ export default function Home() {
 					</Link>
 				</li>
 				<li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
-					<Link prefetch='intent' to='/action-example'>
-						/action-example (Action Example)
-					</Link>
-				</li>
-				<li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
-					<Link prefetch='intent' to='/action-progressive-example'>
-						/action-progressive-example (Action Progressive Example)
-					</Link>
-				</li>
-				<li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
 					<Link prefetch='intent' to='/loader-example-streaming'>
 						/loader-example-streaming (Loader Example Streaming)
 					</Link>
@@ -62,6 +52,20 @@ export default function Home() {
 				<li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
 					<Link prefetch='intent' to='/loader-example-infinite-scroll'>
 						/loader-example-infinite-scroll (Loader Example Infinite Scroll)
+					</Link>
+				</li>
+			</ul>
+      
+      <h2 className='text-2xl font-bold my-4'>Action Examples:</h2>
+      <ul className='space-y-2'>
+        <li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
+          <Link prefetch='intent' to='/action-example'>
+            /action-example (Action Example)
+          </Link>
+        </li>
+        <li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
+          <Link prefetch='intent' to='/action-progressive-example'>
+						/action-progressive-example (Action Progressive Example)
 					</Link>
 				</li>
 			</ul>
