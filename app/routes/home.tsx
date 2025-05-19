@@ -21,9 +21,6 @@ export default function Home() {
       <h2 className="text-2xl font-bold my-4">Available Routes:</h2>
       <ul className="space-y-2">
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
-          <Link prefetch="intent" to="/">/ (Home)</Link> 
-        </li>
-        <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/loader-example">/loader-example (Pokemon List)</Link>
         </li>
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
