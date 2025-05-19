@@ -33,8 +33,11 @@ export default [
 
 	// Sign Up
 	route('sign-up', "routes/auth/sign-up.tsx"),
+	route('sign-up-action', "routes/auth/sign-up-action.tsx"),
 	route('sign-in', "routes/auth/sign-in.tsx"),
+	route('sign-in-action', "routes/auth/sign-in-action.tsx"),
 	route('sign-out', "routes/auth/sign-out.tsx"),
+	route('sign-out-action', "routes/auth/sign-out-action.tsx"),
 
 	// Protected Routes
 	route('protected-loader-example', "routes/protected/protected-loader-example.tsx"),

@@ -92,10 +92,19 @@ export default function Home() {
           <Link prefetch="intent" to="/sign-up">/sign-up (Sign Up)</Link>
         </li>
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
+          <Link prefetch="intent" to="/sign-up-action">/sign-up-action (Sign Up Action)</Link>
+        </li>
+        <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/sign-in">/sign-in (Sign In)</Link>
         </li>
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
+          <Link prefetch="intent" to="/sign-in-action">/sign-in-action (Sign In Action)</Link>
+        </li>
+        <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/sign-out">/sign-out (Sign Out)</Link>
+        </li>
+        <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
+          <Link prefetch="intent" to="/sign-out-action">/sign-out-action (Sign Out Action)</Link>
         </li>
         <li className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200">
           <Link prefetch="intent" to="/protected-loader-example">/protected-loader-example (Protected Loader Example)</Link>
