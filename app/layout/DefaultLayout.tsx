@@ -10,6 +10,7 @@ const Links = [
 ];
 
 export default function DefaultLayout() {
+	// Note: Get user from root data
 	const {user} = useRootData();
 	console.log("🛑 ~ DefaultLayout ~ user:", user)
 	// NOTE: Client side version with better-auth
