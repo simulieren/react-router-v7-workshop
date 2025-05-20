@@ -68,6 +68,11 @@ export default function Home() {
 						/action-progressive-example (Action Progressive Example)
 					</Link>
 				</li>
+				<li className='text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-200'>
+					<Link prefetch='intent' to='/action-example-zod'>
+						/action-example-zod (Action Example Zod)
+					</Link>
+				</li>
 			</ul>
 
 			<h2 className='text-2xl font-bold my-4'>Layouts: User Profile</h2>

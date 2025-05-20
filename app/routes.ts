@@ -8,10 +8,13 @@ export default [
 		route('loader-example-infinite-scroll', "routes/loader-example-infinite-scroll.tsx"),
 		route('loader-example/:id', "routes/loader-example-with-param.tsx"),
 		route('client-loader-example', "routes/client-loader-example.tsx"),
-		route('action-example', "routes/action/action-example.tsx"),
-		route('action-progressive-example', "routes/action/action-progressive-example.tsx"),
 		route('loader-example-streaming', "routes/loader-example-streaming.tsx"),
 		route('loader-example-parallel', "routes/loader-example-parallel.tsx"),
+		
+		// Action Examples
+		route('action-example', "routes/action/action-example.tsx"),
+		route('action-progressive-example', "routes/action/action-progressive-example.tsx"),
+		route('action-example-zod', "routes/action/action-example-zod.tsx"),
 
 		// BIZ Examples
 		route('biz-api-example', "routes/action/biz-api-example.tsx"),
