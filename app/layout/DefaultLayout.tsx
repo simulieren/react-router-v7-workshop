@@ -1,4 +1,4 @@
-import { NavLink, Outlet, useNavigation } from "react-router";
+import { Link, NavLink, Outlet, useNavigation } from "react-router";
 import { authClient } from "~/.client/auth-client";
 import { useRootData } from "~/hooks/useRootData";
 
@@ -38,10 +38,15 @@ export default function DefaultLayout() {
 				</ul>
 
 				{/* User Info */}
-				{user && (
+				{user ? (
 					<div className="flex items-center gap-2 p-4">
 						<span className="text-sm capitalize">{user.name}</span>
 						<button className="text-sm text-blue-500 hover:text-blue-600" onClick={() => authClient.signOut()}>Sign Out</button>
+					</div>
+				) : (
+					<div className="flex items-center gap-2 p-4">
+						<Link to="/sign-in">Sign In</Link>
+						<Link to="/sign-up">Sign Up</Link>
 					</div>
 				)}
 			</nav>
